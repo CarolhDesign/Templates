@@ -1,0 +1,18 @@
+@mixin flexbox($dir : column, $just: center, $align:center,$wrap:nowrap){
+    display:flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+    flex-wrap: $wrap;
+};
+
+@mixin rounded-border($radius:25px){
+    border-radius: $radius;
+}
+@mixin CurrentMatches(){
+    @include flexbox(column, center, center, nowrap);
+    @include rounded-border();
+    flex-basis: 30%;
+    background-color:white;
+    min-height:$box-size;
+}

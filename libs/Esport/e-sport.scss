@@ -1,0 +1,17 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+#container{
+    @include flexbox($dir:row);
+    width:100%;
+}
+
+.CurrentMatches{
+    @include CurrentMatches;
+}
