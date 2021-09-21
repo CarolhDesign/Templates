@@ -1,49 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Quicksand", sans-serif;
 }
 
 #container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   width: 100%;
 }
 
 .CurrentMatches {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
   border-radius: 25px;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  flex-basis: 20%;
   background-color: white;
   min-height: 200px;
+  box-shadow: 2px 3px 18px -4px black;
+  -webkit-box-shadow: 2px 3px 18px -4px black;
+  -moz-box-shadow: 2px 3px 18px -4px black;
+  position: relative;
 }
-/*# sourceMappingURL=e-sport.css.map */
+.CurrentMatches_header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  min-height: 80px;
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgba(37, 145, 251, 0.98) 0.1%, #000780 99.8%);
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+.CurrentMatches_header .icon {
+  font-size: 35px;
+  padding: 0 10px;
+  -webkit-animation: ScaleAnim 1s infinite alternate ease-in;
+          animation: ScaleAnim 1s infinite alternate ease-in;
+}
+
+@-webkit-keyframes ScaleAnim {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+    color: #b3b3b3;
+  }
+}
+
+@keyframes ScaleAnim {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+    color: #b3b3b3;
+  }
+}/*# sourceMappingURL=e-sport.css.map */
